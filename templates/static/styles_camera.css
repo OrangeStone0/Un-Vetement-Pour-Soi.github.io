@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'VotrePolice';
+    src: url("{{ url_for('static', filename='font/calibri.ttf') }}") format('woff');
+    /* Ajoutez d'autres sources ou styles ici si nécessaire */
+}
+body {
+    font-family: 'calibri', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+p {
+    color: #000000;
+}
+
+button {
+    background-color: #0f4970;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.conteneur-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteneur-image {
+    margin-top: 80px;
+    max-width: 100%; /* L'image ne dépassera jamais la largeur de son conteneur */
+    height: auto; /* Maintient le ratio de l'image */
+    display: block; /* Espace entre l'image et les boutons */
+}
+
+.croix-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontal-buttons {
+    margin-top: 0px;
+    display: flex;
+}
+
+.horizontal-buttons button {
+    margin: 0 25px; /* Espace de 5px à gauche et à droite de chaque bouton horizontal */
+}
+
+.center-button {
+    margin-top: 0px; /* Espace entre les boutons horizontaux et le bouton central */
+}
+
+
+.autre-page {
+    display: flex;
+    align-items: center;
+    /* Utilisation de flexbox pour aligner les éléments verticalement */
+}
+
+.color-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #0f4970;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.lien {
+    margin-left: 10px;
+    margin-top: 20px; /* Marge pour séparer le rectangle du lien, ajustez selon vos besoins */
+    z-index: 2;
+    color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+    color: white; /* Couleur initiale du texte */
+}
+
+a:hover {
+    color: gray;
+}

@@ -1,0 +1,40 @@
+.autre-page {
+    display: flex;
+    align-items: center;
+    /* Utilisation de flexbox pour aligner les éléments verticalement */
+}
+
+.color-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #0f4970;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.lien {
+    margin-left: 10px;
+    margin-top: 20px; /* Marge pour séparer le rectangle du lien, ajustez selon vos besoins */
+    z-index: 2;
+    color: antiquewhite;
+}
+
+
+.lien {
+    margin-left: 10px;
+    margin-top: 20px; /* Marge pour séparer le rectangle du lien, ajustez selon vos besoins */
+    z-index: 2;
+    color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+    color: white; /* Couleur initiale du texte */
+}
+
+a:hover {
+    color: gray;
+}
